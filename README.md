@@ -18,4 +18,4 @@ The script:
 By default, the script outputs a **JSON file**, and optionally can also generate a **CSV file**.
 
 Link to Project: 
-[https://github.com/mikeizbicki/cmc-csci040/tree/2026spring/project_02_webscraping]
+https://github.com/mikeizbicki/cmc-csci040/tree/2026spring/project_02_webscraping
