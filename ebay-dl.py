@@ -53,6 +53,7 @@ def parse_itemssold(s):
 parser = argparse.ArgumentParser(description='Download infromation from ebay and convert to JSON')
 parser.add_argument('search_term')
 parser.add_argument('--num-pages', default=10)
+parser.add_argument('--csv', action='store_true')
 args = parser.parse_args()
 
 print('args.search_term=', args.search_term)
@@ -155,7 +156,7 @@ for page_number in range(1, int(args.num_pages)+1):
         items.append(item)
     
     print('len(tags_item)=', len(tags_items))
-    time.sleep(2)   # waits 2 seconds
+   # time.sleep(2)   # waits 2 seconds
 
 if args.csv:
     filename = args.search_term+ '.csv'
@@ -171,7 +172,7 @@ if args.csv:
         writer.writeheader()
         for item in items:
             writer.writerow(item)
-            
+
 else:
     filename = args.search_term+'.json'
     with open(filename, 'w', encoding='ascii') as f:
