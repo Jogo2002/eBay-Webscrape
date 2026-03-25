@@ -19,3 +19,6 @@ By default, the script outputs a **JSON file**, and optionally can also generate
 
 Link to Project: 
 https://github.com/mikeizbicki/cmc-csci040/tree/2026spring/project_02_webscraping
+
+**Note:** 
+I was only able to retrieve page html once throughout the entire project before being blocked with a Pardon Our Interruption result with each subsequent attempt. Thus, I was unable to retrieve any scraped valid scraped data. 
